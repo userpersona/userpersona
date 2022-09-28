@@ -1,0 +1,238 @@
+/* generic styles */
+
+body { 
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;    
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea:focus, input:focus {
+    outline:none;
+}
+
+/* User Persona's Google page styles */
+
+.header {    
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
+    line-height: 24px;
+}
+
+.header__link, .header__link a:visited {
+    color:black;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+.header__link:hover a {
+    text-decoration: underline;
+}
+
+.header__grid-icon { 
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    border:none;
+    background: none;
+    cursor: pointer;
+}
+
+.header__grid-icon__image {
+    fill:#5f6368;
+    opacity: 1;
+}
+.header__grid-icon-image:hover {
+    border-radius: 20px;
+    background-color: rgb(236, 236, 236);
+}
+
+.header__sign-in {
+    color:white;
+    background: #1a73e8;
+    border: 1px solid transparent; 
+    font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 16px;
+    margin-left: 10px;
+    margin-right: 8px;
+    min-width: 96px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.header__sign-in:hover {
+    mix-blend-mode: multiply;
+    filter: brightness(110%);
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+}
+
+.searchinput {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-input:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+.search-input {
+    max-width: 584px;
+    border: 1px solid #dfe1e5;
+    flex:1;
+    padding: 2px 0px 1px 36px;
+    border-radius: 20px; 
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    color: rgba(0,0,0,.87);
+    height: 34px;
+    font-size: 16px;
+    width: 50em;
+}
+
+.loupe {
+    height: 20px;
+    width: 20px;
+}
+
+.googlefoot {
+    flex-direction:column;
+    display:flex;
+    justify-content: center;
+    margin-left: 30em;
+    margin-right: 30em;
+}
+
+.input-google-foot {
+    display: flex;
+    justify-content: center;
+    margin: 11px 4px;
+    padding: 0 16px;
+}
+
+.googlesearch {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.googlesearch:hover {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    box-shadow: 0px 0px 4px 1px #929292;
+}
+
+.imfeelinglucky:hover { 
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    box-shadow: 0px 0px 4px 1px #929292;;
+}
+
+.imfeelinglucky {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.magnifying-glass {
+    fill:#9aa0a6;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+
+.mic {
+    position: relative;
+    left: 590px;
+    top: -32px;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+  
+.footer {
+    color:#70757a;
+    border-width: thin;
+    background-color: #f2f2f2;    
+    margin-top: auto;
+}
+
+.footer__country {
+    padding: 15px;
+    border-bottom: 1px solid #dadce0;
+    margin:0;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__links a:hover {
+    text-decoration: underline;
+}
+
+.footer__links-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer__links-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__links__link {
+    color:#70757a;
+    padding: 15px;
+}
+
+.footer__links__link, .footer__links__link  a:visited {
+    color:#70757a;  
+}

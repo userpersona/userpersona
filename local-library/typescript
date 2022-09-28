@@ -1,0 +1,122 @@
+Script started on Mon Jul  4 12:33:44 2022
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Lautaros-MacBook-Pro.local/Users/userpersona/Desktop/code/express-locallibrary-tutorial[0m[27m[24m[Juserpersona@Lautaros-MacBook-Pro express-locallibrary-tutorial % [K[?2004h{ ""scripts": {[?2004l
+zsh: command not found: scripts:
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Lautaros-MacBook-Pro.local/Users/userpersona/Desktop/code/express-locallibrary-tutorial[0m[27m[24m[Juserpersona@Lautaros-MacBook-Pro express-locallibrary-tutorial % [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Lautaros-MacBook-Pro.local/Users/userpersona/Desktop/code/express-locallibrary-tutorial[0m[27m[24m[Juserpersona@Lautaros-MacBook-Pro express-locallibrary-tutorial % [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Lautaros-MacBook-Pro.local/Users/userpersona/Desktop/code/express-locallibrary-tutorial[0m[27m[24m[Juserpersona@Lautaros-MacBook-Pro express-locallibrary-tutorial % [K[?2004hnnpm run < devstar [Kt[?2004l
+
+> express-locallibrary-tutorial@0.0.0 devstart
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.18[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+npo m run serverstar                  ^^C  ^C[1m[7m%[27m[1m[0m                                                                                ]7;file://Lautaros-MacBook-Pro.local/Users/userpersona/Desktop/code/express-locallibrary-tutorial[0m[27m[24m[Juserpersona@Lautaros-MacBook-Pro express-locallibrary-tutorial % [K[?2004hnnpm run ser vr  rvers [Kttart[?2004l
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Missing script: "serverstart"
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m 
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Did you mean one of these?
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m     npm restart # Restart a package
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m     npm run devstart # run the "devstart" package script
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m     npm run serverstar # run the "serverstar" package script
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m 
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m To see a list of scripts, run:
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m   npm run
+[0m
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m A complete log of this run can be found in:
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m     /Users/userpersona/.npm/_logs/2022-07-04T15_48_51_203Z-debug-0.log
+[0m[1m[7m%[27m[1m[0m                                                                                ]7;file://Lautaros-MacBook-Pro.local/Users/userpersona/Desktop/code/express-locallibrary-tutorial[0m[27m[24m[Juserpersona@Lautaros-MacBook-Pro express-locallibrary-tutorial % [K[?2004hnnpm run sr ervers [Kttar[?2004l
+
+> express-locallibrary-tutorial@0.0.0 serverstar
+> DEBUG=express-locallibrary-tutorial:* npm run devstart
+
+
+> express-locallibrary-tutorial@0.0.0 devstart
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.18[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+  [34;1mexpress-locallibrary-tutorial:server [0mListening on port 3000 [34m+0ms[0m
+[0mGET / [36m304 [0m211.374 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.079 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m7.849 ms - 1432[0m
+[0mGET / [32m200 [0m18.022 ms - 173[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.015 ms - -[0m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+  [34;1mexpress-locallibrary-tutorial:server [0mListening on port 3000 [34m+0ms[0m
+[0mGET / [36m304 [0m186.222 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.634 ms - -[0m
+[0mGET / [36m304 [0m18.618 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.588 ms - -[0m
+[0mGET / [36m304 [0m17.028 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.825 ms - -[0m
+[0mGET / [36m304 [0m15.541 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.545 ms - -[0m
+[0mGET / [36m304 [0m21.557 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.331 ms - -[0m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+  [34;1mexpress-locallibrary-tutorial:server [0mListening on port 3000 [34m+0ms[0m
+[0mGET / [32m200 [0m166.615 ms - 170[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.944 ms - -[0m
+[0mGET / [36m304 [0m4.631 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.416 ms - -[0m
+[0mGET / [36m304 [0m20.064 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.354 ms - -[0m
+[0mGET / [36m304 [0m9.757 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.564 ms - -[0m
+[0mGET / [36m304 [0m19.427 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.285 ms - -[0m
+[0mGET / [36m304 [0m21.376 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.192 ms - -[0m
+[0mGET / [36m304 [0m12.144 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.734 ms - -[0m
+[0mGET / [36m304 [0m8.315 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.731 ms - -[0m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+  [34;1mexpress-locallibrary-tutorial:server [0mListening on port 3000 [34m+0ms[0m
+[0mGET / [36m304 [0m183.839 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.677 ms - -[0m
+[0mGET / [36m304 [0m16.824 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.406 ms - -[0m
+^C
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Lautaros-MacBook-Pro.local/Users/userpersona/Desktop/code/express-locallibrary-tutorial[0m[27m[24m[Juserpersona@Lautaros-MacBook-Pro express-locallibrary-tutorial % [K[?2004hnnpm run devstar [Kt[?2004l
+
+> express-locallibrary-tutorial@0.0.0 devstart
+> nodemon ./bin/www
+
+[33m[nodemon] 2.0.18[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node ./bin/www`[39m
+[0mGET / [36m304 [0m185.734 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.744 ms - -[0m
+[0mGET / [36m304 [0m18.465 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.153 ms - -[0m
+[0mGET / [36m304 [0m15.997 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.420 ms - -[0m
+[0mGET / [36m304 [0m11.104 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.417 ms - -[0m
+[0mGET / [36m304 [0m22.289 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.443 ms - -[0m
+^C
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Lautaros-MacBook-Pro.local/Users/userpersona/Desktop/code/express-locallibrary-tutorial[0m[27m[24m[Juserpersona@Lautaros-MacBook-Pro express-locallibrary-tutorial % [K[?2004hnnpm,   run start[?2004l
+
+> express-locallibrary-tutorial@0.0.0 start
+> node ./bin/www
+
+[0mGET / [36m304 [0m182.302 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.709 ms - -[0m
+[0mGET / [36m304 [0m18.743 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.650 ms - -[0m
+[0mGET / [36m304 [0m15.014 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.525 ms - -[0m
