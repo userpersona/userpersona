@@ -22,47 +22,41 @@ let y = 0;
 let X = "X";
 let O = "O";
 let lastPlayer = "";
-function play (x,y,_mark) {
 
-    if (lastPlayer === _mark){
-       
-       board = "you cant play twice"
+function play(x, y, _mark) {
+
+    if (lastPlayer === _mark) {
+       throw new Error("you cant play twice");
+    }
+
+   
+    // selection of coordenada X
+    // validation, just because
+    if (x < 1 || x > 3) throw new Error("X can only be 1, 2 or 3") 
+    x = x-1    
+    if (y < 1 || y > 3) throw new Error("Y can only be 1, 2 or 3") 
+    y = y-1 
+    
+    // selection of coordenada Y & una validacion que no deje jugar en una posicion ocupada
+
+    if (board[x][y] !== null){ 
+        throw new Error("the place is already taken")
     }
 
     lastPlayer = _mark
-// selection of coordenada X
-    if (x === 1){ 
-        x = 0
-    }
-    if ( x === 2) {
-        x = 1
-    }
-    if (x === 3) {
-        x = 2
-    }
-// selection of coordenada Y & una validacion que no deje jugar en una posicion ocupada
-
-    if (y === 1 && board [x][0] === null){ 
-        board [x][0] = _mark
-    }
-
-    if ( y === 2 && board [x][1] === null) {
-        board [x][1] = _mark
-    }
-
-    if (y === 3 && board [x][2] === null) {
-        board [x][2] = _mark
-    }
+    board[x][y] = _mark
  
-
+}
+//  - playX que recibe unicamente los parámetros x e y.
+function playO(x, y) {
+    return play(x, y, O);
 }
 
-function playO(x,y) {
-    play(x,y,O);
+//  - playO, igual a la anterior pero para 'o'.
+function playX(x, y) {
+    return play(x, y, X);
 }
-function playX(x,y) {
-    play(x,y,X);
-}
+
 // selection Mark
 
 
@@ -77,40 +71,29 @@ function playX(x,y) {
 // validation of play
 
 
-function initialize () {
-    lastPlayer = ""
-     board = [
+function setupBoard() {
+    lastPlayer = "";
+    board = [
         [null, null, null],
         [null, null, null],
         [null, null, null],
-        ]
-    }
+    ];
+}
 
-play(1,1,O);
-
-play(1,2,X);
-
-play(2,2,O);
-
-play(2,1,X);
-play(2,3,O);
-play(3,1,X);
-initialize();
-play(1,1,X);
-initialize();
+setupBoard();
 playX(1,1);
-playO(2,2);
-playX(1,3);
-playO(1, 2);
-playX(3,2);
-playO(3, 3);
-playX(3,1);
-console.log ("asd", lastPlayer)
+playX(2,2);
+// playX(1,3);
+// playO(1, 2);
+// playX(3,2);
+// playO(3, 3);
+// playX(3,1);
+console.log("asd", lastPlayer);
 
 
 // initialice();
 
-console.table(board)
+console.table(board);
 // console.log ("asd","\n", board[0], "\n",  board [1],"\n", board [2] ,"\n",  play(1,2, O), play(1,1,X))
 
 // Es decir, con el tablero recién inicializado:
@@ -133,5 +116,5 @@ console.table(board)
 
 // Además deben existir las siguientes funciones:
 //  - setupBoard que devuelve un board inicializado.
-//  - playX que recibe unicamente los parámetros x e y.
-//  - playO, igual a la anterior pero para 'o'.
+
+
