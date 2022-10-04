@@ -39,12 +39,12 @@ function play(x, y, _mark) {
     
     // selection of coordenada Y & una validacion que no deje jugar en una posicion ocupada
 
-    if (board[x][y] !== null){ 
+    if (board[y][x] !== null){ 
         throw new Error("the place is already taken")
     }
 
     lastPlayer = _mark
-    board[x][y] = _mark
+    board[y][x] = _mark
  
 }
 //  - playX que recibe unicamente los parámetros x e y.
@@ -81,13 +81,13 @@ function setupBoard() {
 }
 
 setupBoard();
-playX(1,1);
-playX(2,2);
-// playX(1,3);
-// playO(1, 2);
-// playX(3,2);
-// playO(3, 3);
-// playX(3,1);
+playX(3, 3);
+playO(2, 2);
+playX(1, 1);
+playO(1, 3);
+playX(3, 1);
+playO(3, 2);
+playX(2, 1);
 console.log("asd", lastPlayer);
 
 
