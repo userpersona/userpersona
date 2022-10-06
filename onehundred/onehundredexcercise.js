@@ -23,9 +23,9 @@ var relationshipTime = undefined;
 function checkFunc (_nombre, _enPareja) {
     saludar = "Buenos dias mr. " + _nombre;
     console.log(saludar)
-    if (_enPareja === false) { 
+        if (_enPareja === false) { 
         console.log( "Time to go party! ")
-    }
+        }
 }
 // Call the function using 2 arguments
 checkFunc(dnuske,isInARelationship)
@@ -35,11 +35,11 @@ console.log("3------------------------------------------------------------------
 let Planets = ["earth","jupiter","pluton","marth","neptune"]
 // console.log each item in the array
 function consolePlanets () {
-        for (let i = 0; i < Planets.length; i ++) {
+    for (let i = 0; i < Planets.length; i ++) {
 // Also console.log the index in each iteration
-            console.log(Planets[i] + ",the index is " + [i] )
-        }
+        console.log(Planets[i] + ",the index is " + i)
     }
+}
 consolePlanets()
 console.log("4----------------------------------------------------------------------------")
 // 4.
@@ -68,23 +68,24 @@ function consoleMyArr() {
 }
 consoleMyArr()
 console.log("6----------------------------------------------------------------------------")
-// 6.
-let student1Courses = ['Math', 'English', 'Programming'];
+// 6. 
+// Loop over the 2 arrays and if there are any common courses, if so console.log them
+let student1Courses = ['Math', 'Programming', 'English'];
 let student2Courses = ['Geography', 'Spanish', 'Programming'];
 function sameCourses () {
-    for ( let i = 0; i < student2Courses.length; i++) {
-        if (student1Courses[i] === student2Courses[i]) {
-            console.log("the common course is " + student1Courses[i])
-        }
+    student1Courses.forEach(course1 => {
+        student2Courses.forEach(course2 => {
+            if (course1 === course2) {
+                console.log("the common course is " + course1)
+            }
+        })
     }
-}
+)}
 sameCourses()
 console.log("7----------------------------------------------------------------------------")
-// Loop over the 2 arrays and if there are any common courses, if so console.log them
-// 7.
+// 7. compare the 2 arrays and find common food if any
 let food = ['Noodle', 'Pasta', 'Ice-cream'];
 let food1 = ['Fries', 'Ice-cream', 'Pizza'];
-// compare the 2 arrays and find common food if any
 // function sameFoods () {
 //     for (let i = 0; i < food.length; i++) {
 //         for (let j = 0; j < food1.length; j++) {
@@ -96,7 +97,7 @@ let food1 = ['Fries', 'Ice-cream', 'Pizza'];
 // };
 function equalFoodFilter() {
     food.forEach( dish1 => {
-        food1.filter(dish2 => {
+        food1.forEach(dish2 => {
             if (dish1 === dish2) {
                 console.log("the common food is "+ dish1)
             }
@@ -109,27 +110,31 @@ equalFoodFilter()
 console.log("8----------------------------------------------------------------------------")
 // 8.
 let values1= ['Apple', 1, false];
-let values2 = ['Fries', 2 ,true];
-let values3 = ['Mars', 9, 'Apple'];
+let values2 = ['Fries', 2 ,true, 'asd', 'pepe'];
+let values3 = ['Mars', 9, 'Apple', 1];
 // compare the 3 arrays and find any common elements
 function sameValues () {
     let result = [];
     values1.forEach(firstValue => {
         values2.forEach(secondValue => {
-            if(firstValue === secondValue) {
-                result = firstValue;
-            } else {
-                values3.forEach(thirdValue => {
-                    if(firstValue === thirdValue) {
-                        result = thirdValue;
-                    }
-                })
-            }
+            values3.forEach(thirdValue => {
+                if(firstValue === secondValue && result.includes(firstValue) === false) {
+                    result.push(firstValue);
+                }
+                if(firstValue === thirdValue && result.includes(thirdValue) === false) {
+                    result.push(thirdValue);
+                }
+                if(secondValue === thirdValue && result.includes(secondValue) === false) {
+                    result.push(secondValue)
+                }
+                
+            })
         })
     })
-    console.log(result)
+    return result
 }
-sameValues()
+
+console.log(sameValues())
 console.log("9----------------------------------------------------------------------------")
 // 9.
 let furniture = ['Table', 'Chairs','Couch'];
@@ -138,7 +143,7 @@ function leterByLeter () {
     let eachLetter = ""
     furniture.forEach(function(letters) { 
         for (let q = 0; q<= letters.length; q ++){
-            console.log(letters.charAt(q))
+            console.log(letters.charAt(q)) // arreglar
         }    
         
     })
